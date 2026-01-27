@@ -1328,7 +1328,7 @@
                 gap: 60px;
             }
             .contact-info {
-                justify-content: center;
+                /* justify-content: center; */
             }
             .hero-text h1 {
                 font-size: 3rem;
@@ -1562,10 +1562,6 @@
                 <h1>Abdul Rafey <span>Waleed</span></h1>
                 <p>Software Developer with hands-on experience in backend, mobile, and full-stack development. Proficient in Java, Spring Boot, REST APIs, Flutter, and ReactJS, with experience building and publishing production-ready applications.</p>
                 <div class="contact-info">
-                    <a href="tel:+919381925683" class="contact-item phone">
-                        <i class="fas fa-phone"></i>
-                        <span>+91 9381925683</span>
-                    </a>
                     <a href="mailto:a.rafeywaleeda5@gmail.com" class="contact-item email">
                         <i class="fas fa-envelope"></i>
                         <span>a.rafeywaleeda5@gmail.com</span>
@@ -1797,8 +1793,6 @@
                 <!-- Project 1: GroFlow -->
                 <div class="project-card fade-in">
                     <div class="project-img">
-                        <!-- Logo (shows by default) -->
-
                         <!-- PNG Poster (shows by default) -->
                         <img src="assets/groflow-png-poster.png" alt="GroFlow App Poster" class="project-poster" onerror="this.style.display='none';">
                         <!-- GIF Poster (shows on hover) -->
@@ -1809,13 +1803,15 @@
                     <div class="project-content">
                         <div class="project-title">
                             <span>GroFlow</span>
-                            <div class="project-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                                <span style="margin-left: 5px; font-size: 0.85rem;">4.8 (200+ downloads)</span>
+                            <div class="project-rating" style="display: flex; align-items: center; gap: 10px;">
+                                <div style="display: flex; align-items: center; gap: 5px;">
+                                    <i class="fas fa-star" style="color: #FFD700;"></i>
+                                    <span style="color: var(--gray-light); font-size: 0.9rem;">4.8</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 5px;">
+                                    <i class="fas fa-download" style="color: var(--gray-light);"></i>
+                                    <span style="color: var(--gray-light); font-size: 0.9rem;">200+</span>
+                                </div>
                             </div>
                         </div>
                         <p style="color: var(--gray); line-height: 1.7;">Productivity tracker with habit heatmaps, reminders, notes, and pin/search features.</p>
@@ -2153,12 +2149,13 @@
         // Mobile View - Auto-hover effect when elements are at center of screen
         const checkAutoHover = () => {
             if (window.innerWidth <= 768) { // Only on mobile
+                // Exclude contact items from auto-hover
                 const elements = document.querySelectorAll(
-                    '.project-card, .skill-category, .achievement-card, .education-timeline, .timeline-content, .contact-item'
+                    '.project-card, .skill-category, .achievement-card, .education-timeline, .timeline-content'
                 );
 
                 const viewportCenter = window.innerHeight / 2;
-                const centerThreshold = 100; // How close to center to trigger
+                const centerThreshold = 150; // INCREASED from 100 to 150
 
                 elements.forEach(element => {
                     const rect = element.getBoundingClientRect();
