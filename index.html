@@ -24,6 +24,56 @@
         }
         
          :root {
+            --bg: #0a0a0d;
+            --bg-subtle: #161616;
+            --bg-card: #1c1c1c;
+            --bg-elevated: #17171c;
+            --text: #f2f2f5;
+            --text-muted: #9a9aa6;
+            --text-faint: #63636e;
+            --border: rgba(255, 255, 255, 0.08);
+            --border-strong: rgba(255, 255, 255, 0.15);
+            --shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+            --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.5);
+            --shadow-xl: 0 40px 90px rgba(0, 0, 0, 0.65);
+            --code-bg: #08080a;
+            --header-bg: rgba(9, 9, 11, 0.72);
+            --footer-bg: #050506;
+            --radius: 16px;
+            --radius-sm: 10px;
+            --radius-pill: 100px;
+            --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+            --ease: cubic-bezier(0.16, 1, 0.3, 1);
+            --trans: all 0.5s var(--ease);
+            --accent: #34d399;
+            --accent-2: #4ade80;
+            --accent-3: #86efac;
+            --accent-soft: rgba(52, 211, 153, 0.12);
+            --accent-glow: rgba(52, 211, 153, 0.4);
+            --accent-text: #06170d;
+            --term-green: #34d399;
+            --grid-line: rgba(255, 255, 255, 0.08);
+            --noise-opacity: 0.035;
+            --ms-bg: #101014;
+            --ms-line: rgba(255, 255, 255, 0.16);
+            --particle-color: 52, 211, 153;
+            --cursor-mix: normal;
+            --dubbit-bg: linear-gradient(135deg, #101c15 0%, #0b140e 60%, #070c09 100%);
+            --dubbit-text: #ffffff;
+            --dubbit-text-muted: rgba(255, 255, 255, 0.36);
+            --dubbit-tagline: rgba(255, 255, 255, 0.3);
+            --dubbit-wave: var(--accent);
+            --dubbit-overlay: rgba(0, 0, 0, 0.3);
+            --dubbit-play-bg: rgba(255, 255, 255, 0.12);
+            --dubbit-play-border: rgba(255, 255, 255, 0.28);
+            --dubbit-play-hover-bg: rgba(255, 255, 255, 0.25);
+            --dubbit-play-icon: #ffffff;
+            --btn-demo-bg: #f2f2f5;
+            --btn-demo-text: #14141a;
+            --btn-demo-border: transparent;
+        }
+        
+        [data-theme="light"] {
             --bg: #ffffff;
             --bg-subtle: #f8f8f8;
             --bg-card: #f8f8f8;
@@ -39,12 +89,6 @@
             --code-bg: #131318;
             --header-bg: rgba(255, 255, 255, 0.78);
             --footer-bg: #101014;
-            --radius: 16px;
-            --radius-sm: 10px;
-            --radius-pill: 100px;
-            --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
-            --ease: cubic-bezier(0.16, 1, 0.3, 1);
-            --trans: all 0.5s var(--ease);
             --accent: #16a34a;
             --accent-2: #22c55e;
             --accent-3: #4ade80;
@@ -70,49 +114,6 @@
             --dubbit-play-icon: #10241a;
             --btn-demo-bg: #14141a;
             --btn-demo-text: #ffffff;
-            --btn-demo-border: transparent;
-        }
-        
-        [data-theme="dark"] {
-            --bg: #0a0a0d;
-            --bg-subtle: #161616;
-            --bg-card: #1c1c1c;
-            --bg-elevated: #17171c;
-            --text: #f2f2f5;
-            --text-muted: #9a9aa6;
-            --text-faint: #63636e;
-            --border: rgba(255, 255, 255, 0.08);
-            --border-strong: rgba(255, 255, 255, 0.15);
-            --shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
-            --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.5);
-            --shadow-xl: 0 40px 90px rgba(0, 0, 0, 0.65);
-            --code-bg: #08080a;
-            --header-bg: rgba(9, 9, 11, 0.72);
-            --footer-bg: #050506;
-            --accent: #34d399;
-            --accent-2: #4ade80;
-            --accent-3: #86efac;
-            --accent-soft: rgba(52, 211, 153, 0.12);
-            --accent-glow: rgba(52, 211, 153, 0.4);
-            --accent-text: #06170d;
-            --term-green: #34d399;
-            --grid-line: rgba(255, 255, 255, 0.08);
-            --noise-opacity: 0.035;
-            --ms-bg: #101014;
-            --ms-line: rgba(255, 255, 255, 0.16);
-            --particle-color: 52, 211, 153;
-            --dubbit-bg: linear-gradient(135deg, #101c15 0%, #0b140e 60%, #070c09 100%);
-            --dubbit-text: #ffffff;
-            --dubbit-text-muted: rgba(255, 255, 255, 0.36);
-            --dubbit-tagline: rgba(255, 255, 255, 0.3);
-            --dubbit-wave: var(--accent);
-            --dubbit-overlay: rgba(0, 0, 0, 0.3);
-            --dubbit-play-bg: rgba(255, 255, 255, 0.12);
-            --dubbit-play-border: rgba(255, 255, 255, 0.28);
-            --dubbit-play-hover-bg: rgba(255, 255, 255, 0.25);
-            --dubbit-play-icon: #ffffff;
-            --btn-demo-bg: #f2f2f5;
-            --btn-demo-text: #14141a;
             --btn-demo-border: transparent;
         }
         
